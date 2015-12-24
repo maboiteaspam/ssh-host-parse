@@ -1,6 +1,6 @@
 # ssh-host-parse
 
-parse ssho host like user@host:port
+parse ssh host like `user@host:port`
 
 ## Install
 
@@ -9,10 +9,24 @@ parse ssho host like user@host:port
 ## Usage
 
 ```js
-var module = require('ssh-host-parse');          // your code here,
-                                                 // your doc here.
+var module = require('@maboiteaspam/ssh-host-parse');
+
+console.log( module('some@where') )         // { host: 'where', port: 22, username: 'some' }
+
+console.log( module('some@where:15251') )   // { host: 'where', port: 15251, username: 'some' }
+
+console.log( module('where:15251') )        // { host: 'where', port: 15251, username: 'root' }
+
+console.log( module('else') )               // { host: 'else', port: 22, username: 'root' }
+
+
 ```
+
+## Notes
+
+I have only pulled out the code from `sequest`, https://github.com/mikeal/sequest/blob/master/index.js#L9
 
 ## More
 
-Additional links and comments.
+- https://github.com/mikeal/sequest
+- https://github.com/maboiteaspam/ssh2-utils
