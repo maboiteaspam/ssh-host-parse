@@ -24,7 +24,8 @@ console.log( module('else') )               // { host: 'else', port: 22, usernam
 
 ## Notes
 
-I have only pulled out the code from `sequest`, https://github.com/mikeal/sequest/blob/master/index.js#L9
+I have only pulled out the code from `sequest`,
+https://github.com/mikeal/sequest/blob/master/index.js#L9
 
 ## More
 
