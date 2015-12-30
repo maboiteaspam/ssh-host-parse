@@ -9,15 +9,15 @@ parse ssh host like `user@host:port`
 ## Usage
 
 ```js
-var module = require('@maboiteaspam/ssh-host-parse');
+var hParse = require('@maboiteaspam/ssh-host-parse');
 
-console.log( module('some@where') )         // { host: 'where', port: 22, username: 'some' }
+console.log( hParse('some@where') )         // { host: 'where', port: 22, username: 'some' }
 
-console.log( module('some@where:15251') )   // { host: 'where', port: 15251, username: 'some' }
+console.log( hParse('some@where:15251') )   // { host: 'where', port: 15251, username: 'some' }
 
-console.log( module('where:15251') )        // { host: 'where', port: 15251, username: 'root' }
+console.log( hParse('where:15251') )        // { host: 'where', port: 15251, username: 'root' }
 
-console.log( module('else') )               // { host: 'else', port: 22, username: 'root' }
+console.log( hParse('else') )               // { host: 'else', port: 22, username: 'root' }
 
 
 ```
