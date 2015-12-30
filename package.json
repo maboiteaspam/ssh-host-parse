@@ -1,6 +1,6 @@
 {
   "name": "@maboiteaspam/ssh-host-parse",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "parse ssh host like user@host:port",
   "main": "index.js",
   "scripts": {
