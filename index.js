@@ -1,5 +1,4 @@
 
-
 function parseConnection (str) {
   var user = 'root'
     , port = 22
